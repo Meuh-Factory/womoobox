@@ -14,20 +14,40 @@ Womoobox needs the following packages:
  - Django >= 1.7
  - Python-gettext >= 2.1
 
+For example:
+```
+mkdir tests && cd tests
+virtualenv -p python3.3 --no-site-packages venv
+. venv/bin/activate
+pip install django
+pip install python-gettext
+```
 
-You'll need a working Django project. If you dont't already have one:
-> django-admin startproject myproject
-> cd myproject/
+You'll need a working Django project.
+
+If you dont't already have one:
+```
+django-admin startproject myproject
+cd myproject/
+python manage.py syncdb
+```
 
 Get & configure Womoobox
 ------------------------
 Checkout code from github reposirory
-> git clone https
+> git clone https://github.com/lrivallain/womoobox.git
 
 Add the app to your `INSTALLED_APPS` in your project settings: `./myproject/settings.py`
+```
+INSTALLED_APPS = (
+    ...
+    'womoobox',
+)
+```
+
 You can also change some settings for womoobox in the app settings file: `./myproject/womoobox/settings.py`
 
-Configure URLs by adding following lines to the myproject/urls.py file:
+Configure URLs by adding the following lines to the myproject/urls.py file:
 ```
 from womoobox.urls import womooboxpatterns
 
