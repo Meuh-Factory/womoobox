@@ -2,7 +2,7 @@ Womoobox
 =========
 Womoobox is a very simple backend for a Firefox app: **[Meuh](https://marketplace.firefox.com/app/meuh)**.
 
-Goal of this backend is to store and display the locations of every Moo generated in the world by the mobile app. 
+The goal of this backend is to store and display the locations of every Moo generated in the world by the mobile app. 
 
 A Moo can be generated with different types of animals and is represented by different pictures (according to the selected animal) on a [OpenStreet-map](http://openstreetmap.org) layer.
 
@@ -45,8 +45,8 @@ You can **test** womoobox app by using the django-integrated server:
 
 This server will serve application on http://127.0.0.1:8000/
 
-Some informations
------------------
+Some information
+----------------
 By default, your django project will use a sqlite database backend. You can choose an other djando-supported backend. Please refer to the [official django docs](https://docs.djangoproject.com/en/1.7/ref/databases/).
 
 For production deploiments, please also refer to the [official django docs](https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/).
