@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Womoobox API</title>
+    <link rel="shortcut icon" type="image/png" href="/static/images/icon32.png" />
+  </head>
+  <body>
+    <h1>API description</h1>
+    <ul>
+        <li><a href="#keymgnt">Keys management</a></li>
+            <ul>
+                <li><a href="#keyadd">Key creation</a></li>
+                <li><a href="#keyrename">Key rename</a></li>
+            </ul>
+        <li><a href="#moomgnt">Moo management</a></li>
+            <ul>
+                <li><a href="#mooadd">Moo creation</a></li>
+                <li><a href="#mooget">Moo get</a></li>
+                <li><a href="#moocount">Moo count</a></li>
+            </ul>
+        <li><a href="#errormgnt">Error management</a></li>
+    </ul>
+    <hr>
+    <h2 id="keymgnt">Keys management</h2>
+    <p>
+        <strong id="keyadd">Key creation:</strong>
+        <ul>
+            <li><a href="/api/key/add" title="">/api/key/add</a></li>
+                <ul>
+                    <li>Methods : GET/POST</li>
+                    <li>Parameters:
+                        <ul>
+                            <li><em>none</em></li>
+                        </ul>
+                    </li>
+                    <li>Errors:
+                        <ul>
+                            <li><em>none</em></li>
+                        </ul>
+                    </li>
+                </ul>
+            <li>Output sample:
+                <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #000000; font-weight: bold">{</span>
+    <span style="color: #204a87; font-weight: bold">&quot;result&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #4e9a06">&quot;succeed&quot;</span><span style="color: #000000; font-weight: bold">,</span>
+    <span style="color: #204a87; font-weight: bold">&quot;key&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #4e9a06">&quot;yCe49NAEBhU673hNlEqL6SY6mIcG3FEOQBV8lGHgKFgg24Z1Ed&quot;</span><span style="color: #000000; font-weight: bold">,</span>
+    <span style="color: #204a87; font-weight: bold">&quot;user_name&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #4e9a06">&quot;User_4&quot;</span>
+<span style="color: #000000; font-weight: bold">}</span>
+</pre></div>
+            </li>
+        </ul>
+    </p>
+    <p>
+        <strong id="keyrename">Key rename:</strong>
+        <ul>
+            <li><a href="/api/key/rename" title="">/api/key/rename</a></li>
+                <ul>
+                    <li>Methods : POST</li>
+                    <li>Parameters:
+                        <ul>
+                            <li><em>(mandatory)</em> key : a valid API key</li>
+                            <li><em>(mandatory)</em> old_username : current username</li>
+                            <li><em>(mandatory)</em> new_username : the wanted username</li>
+                        </ul>
+                    </li>
+                    <li>Limit: 1 moo with same animal / minute</li>
+                    <li>Errors:
+                        <ul>
+                            <li>101 : Invalid input(s) value(s)</li>
+                            <li>105 : This username doesn't exist or is not associated to this key.</li>
+                            <li>106 : This username already exists. Please choose a new one.</li>
+                        </ul>
+                    </li>
+                </ul>
+            <li>Output sample:
+                <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #000000; font-weight: bold">{</span>
+  <span style="color: #204a87; font-weight: bold">&quot;result&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #4e9a06">&quot;succeed&quot;</span><span style="color: #000000; font-weight: bold">,</span>
+  <span style="color: #204a87; font-weight: bold">&quot;key&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #4e9a06">&quot;yCe49NAEBhU673hNlEqL6SY6mIcG3FEOQBV8lGHgKFgg24Z1Ed&quot;</span><span style="color: #000000; font-weight: bold">,</span>
+  <span style="color: #204a87; font-weight: bold">&quot;user_name&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #4e9a06">&quot;bob&quot;</span>
+<span style="color: #000000; font-weight: bold">}</span>
+</pre></div>
+            </li>
+        </ul>
+    </p>
+    <h2 id="moomgnt">Moo management</h2>
+    <p>
+        <strong id="mooadd">Moo creation:</strong>
+        <ul>
+            <li><a href="/api/moo/add" title="">/api/moo/add</a></li>
+                <ul>
+                    <li>Methods : POST</li>
+                    <li>Parameters:
+                        <ul>
+                            <li><em>(mandatory)</em> key : a valid API key</li>
+                            <li><em>(mandatory)</em> latitude : current position</li>
+                            <li><em>(mandatory)</em> longitude : current position</li>
+                            <li><em>(mandatory)</em> animal : the animal name of the current Moo</li>
+                        </ul>
+                    </li>
+                    <li>Errors:
+                        <ul>
+                            <li>101 : Invalid input(s) value(s)</li>
+                            <li>102 : Invalid coords value(s)</li>
+                            <li>103 : Too many moo in a too short time</li>
+                            <li>201 : This API key is invalid</li>
+                            <li>202 : This API key is blacklisted</li>
+                        </ul>
+                    </li>
+                </ul>
+            <li>Output sample:
+                <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #000000; font-weight: bold">{</span>
+  <span style="color: #204a87; font-weight: bold">&quot;result&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #4e9a06">&quot;succeed&quot;</span><span style="color: #000000; font-weight: bold">,</span>
+  <span style="color: #204a87; font-weight: bold">&quot;id&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #0000cf; font-weight: bold">23</span>
+<span style="color: #000000; font-weight: bold">}</span>
+</pre></div>
+            </li>
+        </ul>
+    </p>
+    <p>
+        <strong id="mooget">Moo get:</strong>
+        <ul>
+            <li><a href="/api/moo/get_lasts" title="">/api/moo/get_lasts</a></li>
+                <ul>
+                    <li>Methods : GET</li>
+                    <li>Parameters:
+                        <ul>
+                            <li><em>(optional)</em> id : a Moo-ID limiting the retrieve of Moo (only newer Moo than ID will be get)</li>
+                        </ul>
+                    </li>
+                    <li>Limit: 25  Moo on first load, 25 max on next call.</li>
+                    <li>Errors:
+                        <ul>
+                            <li>101 : Invalid input(s) value(s)</li>
+                            <li>104 : This ID is invalid</li>
+                        </ul>
+                    </li>
+                </ul>
+            <li>Output sample:
+                <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #000000; font-weight: bold">{</span> <span style="color: #204a87; font-weight: bold">&quot;moos&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #000000; font-weight: bold">[</span>
+    <span style="color: #000000; font-weight: bold">{</span> 
+      <span style="color: #204a87; font-weight: bold">&quot;username&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #4e9a06">&quot;bob&quot;</span><span style="color: #000000; font-weight: bold">,</span>
+      <span style="color: #204a87; font-weight: bold">&quot;animal&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #4e9a06">&quot;owl&quot;</span><span style="color: #000000; font-weight: bold">,</span>
+      <span style="color: #204a87; font-weight: bold">&quot;id&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #0000cf; font-weight: bold">23</span><span style="color: #000000; font-weight: bold">,</span>
+      <span style="color: #204a87; font-weight: bold">&quot;longitude&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #4e9a06">&quot;30&quot;</span><span style="color: #000000; font-weight: bold">,</span>
+      <span style="color: #204a87; font-weight: bold">&quot;latitude&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #4e9a06">&quot;30&quot;</span>
+    <span style="color: #000000; font-weight: bold">},</span> <span style="color: #000000; font-weight: bold">{</span>
+      <span style="color: #204a87; font-weight: bold">&quot;username&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #4e9a06">&quot;john&quot;</span><span style="color: #000000; font-weight: bold">,</span>
+      <span style="color: #204a87; font-weight: bold">&quot;animal&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #4e9a06">&quot;pig&quot;</span><span style="color: #000000; font-weight: bold">,</span>
+      <span style="color: #204a87; font-weight: bold">&quot;id&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #0000cf; font-weight: bold">22</span><span style="color: #000000; font-weight: bold">,</span>
+      <span style="color: #204a87; font-weight: bold">&quot;longitude&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #4e9a06">&quot;-1.6242459&quot;</span><span style="color: #000000; font-weight: bold">,</span>
+      <span style="color: #204a87; font-weight: bold">&quot;latitude&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #4e9a06">&quot;48.1187885&quot;</span>
+    <span style="color: #000000; font-weight: bold">}]</span>
+<span style="color: #000000; font-weight: bold">}</span>
+</pre></div>
+            </li>
+        </ul>
+    </p>
+    <p>
+        <strong id="moocount">Moo count:</strong>
+        <ul>
+            <li><a href="/api/moo/count" title="">/api/moo/count</a></li>
+                <ul>
+                    <li>Methods : GET</li>
+                    <li>Parameters:
+                        <ul>
+                            <li><em>none</em></li>
+                        </ul>
+                    </li>
+                    <li>Errors:
+                        <ul>
+                            <li><em>none</em></li>
+                        </ul>
+                    </li>
+                </ul>
+            <li>Output sample:
+                <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #000000; font-weight: bold">{</span> <span style="color: #204a87; font-weight: bold">&quot;nb_moos&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #0000cf; font-weight: bold">23</span> <span style="color: #000000; font-weight: bold">}</span>
+</pre></div>
+            </li>
+        </ul>
+    </p>
+    <h2 id="errormgnt">Error management</h2>
+    <p>
+        In order to manage error, the following type of response is return in case of bad request, or bad informations, sent to the API:
+    </p>
+    <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #000000; font-weight: bold">{</span>
+    <span style="color: #204a87; font-weight: bold">&quot;error_code&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #0000cf; font-weight: bold">201</span><span style="color: #000000; font-weight: bold">,</span>
+    <span style="color: #204a87; font-weight: bold">&quot;error_message&quot;</span><span style="color: #000000; font-weight: bold">:</span> <span style="color: #4e9a06">&quot;a message with error description&quot;</span>
+<span style="color: #000000; font-weight: bold">}</span>
+</pre></div>
+  </body>
+</html>
+

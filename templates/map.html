@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/css/ol.css"  type="text/css">                  <!-- OpenLayer CSS -->
+    <link rel="stylesheet" href="/static/css/moo.css" type="text/css">                  <!-- Womoobox CSS -->
+    <link rel="stylesheet" href="/static/jquery-ui-1.11.2.custom/jquery-ui.min.css" type="text/css"> <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="/static/jquery-ui-1.11.2.custom/jquery-ui.theme.min.css" type="text/css"><!-- jQuery UI CSS -->
+    <script src="/static/js/ol.js" type="text/javascript"></script>                     <!-- OpenLayer JS -->
+    <script src="/static/js/jquery.min.js"></script>                                    <!-- jQuery JS -->
+    <script src="/static/jquery-ui-1.11.2.custom/jquery-ui.min.js"></script>            <!-- jQuery UI -->
+    <script src="/static/js/moo.js"></script>                                           <!-- Womoobox JS -->
+    <title>Womoobox</title>
+    <link rel="shortcut icon" type="image/png" href="/static/images/icon32.png" />
+  </head>
+  <body>
+    <header>
+        <menu type="toolbar">
+            <a id="btn-show-about-from-index" href="#about">...</a>
+        </menu>
+        <h1>World of MooBox</h1>
+    </header>
+    <div class="content">
+        <div id="map" class="map"></div>
+        <div id="about" class="about">
+            <h2>About</h2>
+            <p>
+                Womoobox is a very simple backend for a Firefox app: <a href="https://marketplace.firefox.com/app/meuh" title="Meuh app on Firefox market place">Meuh</a>.
+            </p>
+            <p>
+                Goal of this backend is to store and display the locations of every Moo generated in the world by the mobile app.
+            </p>
+            <p>
+                A Moo can be generated with different types of animals and is represented by different pictures (according to the selected animal) on a OpenStreet-map layer.
+            </p>
+            <p>
+                Each time a moo is generated, user location is sent to a database and
+                displayed on this map. No personnal data are stored on the database.
+            </p>
+
+            <h2>Thanks</h2>
+            <ul>
+                <li><a href="http://openlayers.org/">OpenLayer Team</a></li>
+                <li><a href="https://openclipart.org/user-detail/bloodsong">bloodsong</a></li>
+                <li><a href="https://openclipart.org/user-detail/dodom01">dodom01</a></li>
+                <li><a href="https://openclipart.org/user-detail/edoardoposa">edoardoposa</a></li>
+                <li><a href="https://openclipart.org/user-detail/lemmling">lemmling</a></li>
+                <li><a href="https://openclipart.org/user-detail/netalloy">netalloy</a></li>
+                <li><a href="https://openclipart.org/user-detail/paweo111">paweo111</a></li>
+                <li><a href="https://openclipart.org/user-detail/Pippi2011">Pippi2011</a></li>
+                <li><a href="https://openclipart.org/user-detail/PrinterKiller">PrinterKiller</a></li>
+                <li><a href="https://openclipart.org/user-detail/roland81">roland81</a></li>
+                <li><a href="https://openclipart.org/user-detail/roshellin">roshellin</a></li>
+                <li><a href="https://openclipart.org/user-detail/ruthirsty">ruthirsty</a></li>
+                <li><a href="https://openclipart.org/user-detail/Schplook">chplook</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="preload">
+        <img src="/static/images/cow-bubble.svg" />
+        <img src="/static/images/bird-bubble.svg" />
+        <img src="/static/images/chicken-bubble.svg" />
+        <img src="/static/images/dog-bubble.svg" />
+        <img src="/static/images/duck-bubble.svg" />
+        <img src="/static/images/frog-bubble.svg" />
+        <img src="/static/images/owl-bubble.svg" />
+        <img src="/static/images/sheep-bubble.svg" />
+        <img src="/static/images/turkey-bubble.svg" />
+        <img src="/static/images/cat-bubble.svg" />
+        <img src="/static/images/donkey-bubble.svg" />
+        <img src="/static/images/fly-bubble.svg" />
+        <img src="/static/images/goat-bubble.svg" />
+        <img src="/static/images/turkey-bubble.svg" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+body {
+    background-attachment: fixed;
+    background-image: url("/static/images/bg_farm.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 300% 200%;
+    color: #eee;
+    font-family: "FiraSans","Lucida Grande",Arial,sans-serif;
+    text-align: center;
+    margin:0px;
+    font-size: 1em;
+    overflow: hidden;
+}
+
+
+header:first-child {
+    position: fixed;
+    z-index: 999;
+    background-color: #f97c17;
+    color: #fff;
+    padding-left: 30px;
+    text-align: left;
+    top:0px;
+    width: 100%;
+}
+
+header:first-child h1 {
+    font-weight: lighter;
+    line-height: 1.5rem;
+    white-space: nowrap;
+    font-size: 1.5rem;
+}
+
+header:first-child menu {
+    float: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 15px;
+    padding-right: 45px;
+    padding-bottom: 16px;
+}
+
+header:first-child menu:hover {
+    background-color: #dc6a0e;
+}
+
+header:first-child menu a {
+    line-height: 1.8em;
+    height: 100%;
+    margin: 0;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+.content {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/* map element */
+.map {
+    margin-top: 75px;
+    border: 10px solid #FFFFFF;
+    border-radius: 5px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #FFFFFF;
+    max-height: 85%;
+    max-width: 90%;
+}
+
+/* About part */
+#about {
+    background-color: #73d216;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 100%;
+    margin-bottom: 15px;
+    opacity: 0.85;
+    padding: 3%;
+    text-align: left;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#about a {
+    color: #6c4509;
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+#about a:hover {
+    text-decoration: underline;
+}
+
+/* hide the OL attribution button */
+.ol-attribution {
+    display:none;
+}
+
+.ol-control button {
+    background-color: #f97c17 !important;
+    opacity: 0.7;
+    /* color: #73d216; */
+}
+
+.ol-control button:hover {
+    opacity: 1;
+}
+
+/* *************************************************** */
+/* marker style for current location of user */
+.point_marker {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #49BA59;
+    border-radius: 50%;
+    background-color: #28C940;
+    opacity: 0.5;
+    -moz-animation-duration: 1.5s;
+    -moz-animation-name: geo;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+}
+
+/* animation of the current location point */
+@keyframes geo {
+    from {
+        height: 10px;
+        width: 10px;
+        opacity: 1;
+    }
+    to {
+        height: 20px;
+        width: 20px;
+        opacity: 0.5;
+    }
+}
+
+/* *************************************************** */
+/* default style for animals markers */
+.marker {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    opacity: 0.85;
+    background-repeat: no-repeat;
+}
+
+.marker:hover {
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+    opacity: 1;
+    z-index: 100;
+}
+
+/* marker rotation */
+.inclinate {
+    -moz-animation-duration: 1.5s;
+    -moz-animation-name: inclinate;
+    -moz-animation-iteration-count: 4;
+    -moz-animation-direction: alternate;
+}
+
+
+/* animation of animals markers */
+@keyframes inclinate {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(-180deg);
+    }
+}
+
+/* *************************************************** */
+/* specific style for animals */
+.cow            { background-image: url('/static/images/cow.svg'); }
+.bird           { background-image: url('/static/images/bird.svg'); }
+.chicken        { background-image: url('/static/images/chicken.svg'); }
+.dog            { background-image: url('/static/images/dog.svg'); }
+.duck           { background-image: url('/static/images/duck.svg'); }
+.frog           { background-image: url('/static/images/frog.svg'); }
+.owl            { background-image: url('/static/images/owl.svg'); }
+.sheep          { background-image: url('/static/images/sheep.svg'); }
+.turkey         { background-image: url('/static/images/turkey.svg'); }
+.cat            { background-image: url('/static/images/cat.svg'); }
+.donkey         { background-image: url('/static/images/donkey.svg'); }
+.fly            { background-image: url('/static/images/fly.svg'); }
+.goat           { background-image: url('/static/images/goat.svg'); }
+.pig            { background-image: url('/static/images/pig.svg'); }
+
+
+/* style used to preload :hover background picture
+    and avoid waiting for when first hover */
+.preload {
+    display:none;
+}
+
+.cow:hover      { background-image: url('/static/images/cow-bubble.svg'); }
+.bird:hover     { background-image: url('/static/images/bird-bubble.svg'); }
+.chicken:hover  { background-image: url('/static/images/chicken-bubble.svg'); }
+.dog:hover      { background-image: url('/static/images/dog-bubble.svg'); }
+.duck:hover     { background-image: url('/static/images/duck-bubble.svg'); }
+.frog:hover     { background-image: url('/static/images/frog-bubble.svg'); }
+.owl:hover      { background-image: url('/static/images/owl-bubble.svg'); }
+.sheep:hover    { background-image: url('/static/images/sheep-bubble.svg'); }
+.turkey:hover   { background-image: url('/static/images/turkey-bubble.svg'); }
+.cat:hover      { background-image: url('/static/images/cat-bubble.svg'); }
+.donkey:hover   { background-image: url('/static/images/donkey-bubble.svg'); }
+.fly:hover      { background-image: url('/static/images/fly-bubble.svg'); }
+.goat:hover     { background-image: url('/static/images/goat-bubble.svg'); }
+.pig:hover      { background-image: url('/static/images/pig-bubble.svg'); }

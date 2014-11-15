@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   viewBox="0 0 244.07 254.03"
+   version="1.0"
+   inkscape:version="0.48.4 r9939"
+   width="100%"
+   height="100%"
+   sodipodi:docname="sheep (copie).svg">
+  <defs
+     id="defs24" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="775"
+     id="namedview22"
+     showgrid="false"
+     inkscape:zoom="1.8580483"
+     inkscape:cx="145.23717"
+     inkscape:cy="127.89592"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <metadata
+     id="metadata20">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Cartoon sheep</dc:title>
+        <dc:date>2008-07-07T20:04:15</dc:date>
+        <dc:description>A very round sheep :)</dc:description>
+        <dc:source>https://openclipart.org/detail/17637/cartoon-sheep-by-lemmling</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>lemmling</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>animal</rdf:li>
+            <rdf:li>cartoon</rdf:li>
+            <rdf:li>colour</rdf:li>
+            <rdf:li>funny</rdf:li>
+            <rdf:li>how i did it</rdf:li>
+            <rdf:li>mammal</rdf:li>
+            <rdf:li>sheep</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g3024">
+    <path
+       id="path2383"
+       style="fill:#ffffff;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+       d="m 242.07,122.08 c 0.02,66.3 -53.73,120.07 -120.04,120.07 C 55.72,242.15 1.98,188.38 2,122.08 1.98,55.77 55.72,2 122.03,2 188.34,2 242.09,55.77 242.07,122.08 z"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path3221"
+       style="fill:#000000;fill-opacity:0.31373004"
+       d="M 122.19,62.97 C 66.869,64.09 43,100.32 43,144.78 c 0,19.85 10.825,38.08 25.156,52.25 -30.524,-12.93 -54.598,-38.14 -66.031,-69.4 2.9079,63.68 55.509,114.5 119.9,114.5 66.27,0 120.04,-53.77 120.04,-120.03 0,-14.47 -2.55,-28.34 -7.25,-41.19 0.09,1.84 0.16,3.7 0.16,5.56 0,32.54 -12.99,62.06 -34.03,83.69 3.6,-7.99 5.75,-16.52 5.75,-25.38 0,-45.17 -24.62,-81.81 -81.85,-81.81 -0.89,0 -1.77,-0.02 -2.65,0 z"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path3172"
+       style="fill:#333333;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+       d="m 130.21,242.65 c 0,9.09 14.67,9.38 32.74,9.38 18.07,0 32.73,0.69 32.73,-9.38 0,-17.72 -14.66,-32.1 -32.73,-32.1 -18.07,0 -32.74,14.38 -32.74,32.1 z"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path3329"
+       style="fill:#333333;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+       d="m 115.22,242.65 c 0,9.09 -14.67,9.38 -32.74,9.38 -18.07,0 -32.73,0.69 -32.73,-9.38 0,-17.72 14.66,-32.1 32.73,-32.1 18.07,0 32.74,14.38 32.74,32.1 z"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path3331"
+       style="fill:#000000;fill-opacity:0.31373004;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linejoin:round"
+       d="m 69.89,251.43 c 0,-16.37 9.44,-26.44 9.44,-26.44 0,0 -3.77,13.85 -3.14,26.44 h -6.3 z"
+       inkscape:connector-curvature="0" />
+    <g
+       transform="matrix(0.98135401,0.19220902,-0.19220902,0.98135401,44.756496,-18.148589)"
+       id="g3017">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 123.81,195.03 c -46.4,-3.35 -78.5,11.44 -78.5,11.44 0,0 10.24,-0.25 16.02,0.67 -10.83,7.42 -14.38,22.13 -14.38,22.13 0,0 12.07,-12.95 24.46,-17.55 -10.52,13.98 -11.92,36.96 -11.92,36.96 0,0 12.09,-35.73 34.68,-43.13 17.22,-5.64 35.44,-2.32 35.44,-2.32 0,0 36.11,-2.49 48.49,19.08 1.63,0.77 1.47,-13.1 -8.79,-18.05 l 27.63,-1.43 c -20.15,-8.49 -73.13,-7.8 -73.13,-7.8 z"
+         style="fill:#44aa00;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linejoin:round"
+         id="path2399" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 46.9,212.39 c -3.3,-0.35 -6.28,2.04 -6.63,5.34 -0.05,0.52 -0.01,1.04 0.06,1.54 -2.78,0.27 -5.1,2.49 -5.4,5.38 -0.34,3.29 2.08,6.24 5.38,6.59 0.75,0.08 1.46,0 2.15,-0.18 -0.17,3.17 2.18,5.98 5.37,6.31 3.3,0.35 6.25,-2.07 6.6,-5.37 0.08,-0.83 0,-1.64 -0.22,-2.38 2.57,-0.46 4.66,-2.57 4.95,-5.3 0.34,-3.3 -2.07,-6.25 -5.37,-6.59 -0.53,-0.06 -1.05,-0.05 -1.55,0.02 -0.27,-2.78 -2.45,-5.06 -5.34,-5.36 z m 0.29,11.9 c 0.04,0.41 0.1,0.81 0.22,1.19 -0.17,0.03 -0.34,0.06 -0.51,0.1 0.02,-0.42 0.01,-0.85 -0.06,-1.26 0.12,-0.01 0.24,-0.01 0.35,-0.03 z"
+         style="fill:#ffff00;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+         id="path3181" />
+    </g>
+    <path
+       id="path3155"
+       style="fill:#333333;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+       d="M 119.37,49.78 C 89.24,50.39 68.44,61.43 55.75,78.53 31.68,75.94 11.68,102.15 11.68,102.15 c 0,0 18.89,9.45 32.07,1.54 -2.4,8.71 -3.57,18.1 -3.57,27.9 0,45.18 56.13,81.85 81.85,81.85 26.71,0 81.84,-36.67 81.84,-81.85 0,-9.8 -1.16,-19.19 -3.56,-27.9 13.17,7.91 32.03,-1.54 32.03,-1.54 0,0 -19.97,-26.2 -44.03,-23.62 -13.06,-17.6 -34.71,-28.75 -66.28,-28.75 -0.9,0 -1.78,-0.02 -2.66,0 z"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path3174"
+       style="fill:#000000;fill-opacity:0.31373004;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linejoin:round"
+       d="m 175.54,251.43 c 0,-16.37 -9.44,-26.44 -9.44,-26.44 0,0 3.77,13.85 3.14,26.44 h 6.3 z"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path3157"
+       style="fill:#ffffff;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+       d="m 118.4,119.61 c 0.01,12.51 -10.14,22.67 -22.66,22.67 -12.52,0 -22.67,-10.16 -22.66,-22.67 -0.01,-12.52 10.14,-22.67 22.66,-22.67 12.52,0 22.67,10.15 22.66,22.67 z"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path3159"
+       style="fill:#ffffff;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round"
+       d="m 171.14,119.61 c 0,12.51 -10.15,22.67 -22.67,22.67 -12.52,0 -22.66,-10.16 -22.66,-22.67 0,-12.52 10.14,-22.67 22.66,-22.67 12.52,0 22.67,10.15 22.67,22.67 z"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path3161"
+       style="fill:#000000"
+       d="m 150.99,123.61 c 0,4.17 -3.38,7.55 -7.55,7.55 -4.18,0 -7.56,-3.38 -7.56,-7.55 0,-4.18 3.38,-7.56 7.56,-7.56 4.17,0 7.55,3.38 7.55,7.56 z"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path3163"
+       style="fill:#000000"
+       d="m 108.96,123.61 c 0,4.17 -3.38,7.55 -7.55,7.55 -4.18,0 -7.56,-3.38 -7.56,-7.55 0,-4.18 3.38,-7.56 7.56,-7.56 4.17,0 7.55,3.38 7.55,7.56 z"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path3231"
+       style="fill:#000000;fill-opacity:0.31373004"
+       d="m 200.59,104.78 -1.87,2.66 c 0.24,3.07 0.34,6.2 0.34,9.37 0,45.18 -55.13,81.84 -81.84,81.84 -20.71,0 -61.1,-23.75 -76.07,-56.59 7.62,40.25 57.17,71.38 80.88,71.38 26.71,0 81.84,-36.67 81.84,-81.85 0,-9.39 -1.07,-18.41 -3.28,-26.81 z"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path2398"
+       style="fill:#000000"
+       d="m 138.63,184.24 c -2.29,3.97 -6.5,5.84 -9.4,4.16 -2.89,-1.67 -3.38,-6.25 -1.09,-10.22 2.29,-3.97 6.5,-5.84 9.4,-4.16 2.89,1.67 3.38,6.24 1.09,10.22 z"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path2412"
+       style="fill:#000000"
+       d="m 105.89,184.24 c 2.29,3.97 6.5,5.84 9.4,4.16 2.89,-1.67 3.38,-6.25 1.09,-10.22 -2.29,-3.97 -6.5,-5.84 -9.4,-4.16 -2.89,1.67 -3.38,6.24 -1.09,10.22 z"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:end="3.1407999"
+       sodipodi:start="0"
+       transform="matrix(0.76727954,0,0,-0.69258288,128.18721,197.24474)"
+       d="m -14.531378,117.32742 a 27.986357,27.986357 0 0 1 -55.972704,0.0222 l 27.986347,-0.0222 z"
+       sodipodi:ry="27.986357"
+       sodipodi:rx="27.986357"
+       sodipodi:cy="117.32742"
+       sodipodi:cx="-42.517735"
+       id="path3813"
+       style="fill:#333333;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc" />
+    <path
+       sodipodi:end="3.1407999"
+       sodipodi:start="0"
+       transform="matrix(0.75581563,0.13213865,0.11927461,-0.68223501,166.98552,202.91279)"
+       d="m -14.531378,117.32742 a 27.986357,27.986357 0 0 1 -55.972704,0.0222 l 27.986347,-0.0222 z"
+       sodipodi:ry="27.986357"
+       sodipodi:rx="27.986357"
+       sodipodi:cy="117.32742"
+       sodipodi:cx="-42.517735"
+       id="path3813-9"
+       style="fill:#333333;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc" />
+  </g>
+  <g
+     id="g3877"
+     transform="translate(-2.1527928,-6.9965887)">
+    <path
+       sodipodi:nodetypes="ccccssscc"
+       inkscape:connector-curvature="0"
+       id="path3871"
+       d="m 124.16865,88.99727 c 3.92039,-8.76325 0.85202,-15.36976 -8.57608,-20.013643 C 104.04717,64.004977 96.509935,57.365893 95.323345,49.89566 l 0,-0.0896 c -2.51302,-16.670647 27.604035,-31.062154 67.370525,-32.171753 39.86169,-1.112261 74.29966,11.521798 76.95343,28.228685 2.65376,16.70691 -27.50885,31.149108 -67.37055,32.261368 -13.93738,0.38889 -27.19108,-0.89031 -38.67998,-3.450182 -2.41915,11.295622 -9.42812,14.323102 -9.42812,14.323102 z"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.24889493;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;font-family:Sans"
+       x="107.63982"
+       y="61.892902"
+       id="text3873"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3875"
+         x="107.63982"
+         y="61.892902">Meh?!</tspan></text>
+  </g>
+</svg>
