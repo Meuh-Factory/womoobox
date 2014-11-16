@@ -34,7 +34,7 @@ python manage.py syncdb
 
 Get & configure Womoobox
 ------------------------
-Checkout code from github reposirory
+Checkout code from github repository
 > git clone https://github.com/lrivallain/womoobox.git
 
 Add the app to your `INSTALLED_APPS` in your project settings: `./myproject/settings.py`
@@ -69,4 +69,4 @@ Some information
 ----------------
 By default, your django project will use a sqlite database backend. You can choose an other djando-supported backend. Please refer to the [official django docs](https://docs.djangoproject.com/en/1.7/ref/databases/).
 
-For production deploiments, please also refer to the [official django docs](https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/).
+For production deployments, please also refer to the [official django docs](https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/).

@@ -14,7 +14,7 @@ def _createKey():
             return key_hash # if not, return
 
 
-# default user_name
+# Default user_name
 def _defaultUsername(sender, **kwargs):
     instance = kwargs['instance']
     if not instance.user_name:
@@ -35,7 +35,7 @@ class ApiKey(models.Model):
         return self.key
 
 
-# add a default user_name
+# Add a default user_name
 post_save.connect(_defaultUsername, sender=ApiKey)
 
 

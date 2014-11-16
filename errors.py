@@ -23,7 +23,7 @@ TOO_MOO_SHORT_TIME = {
     'code': 103,
     'msg' : {
         'fr' : "Trop de Meuh envoyés en un temps trop court.",
-        'en' : "Too many moo in a too short time."
+        'en' : "Too many Moos in a too short time."
     }
 }
 
@@ -75,7 +75,7 @@ from django.utils.translation import get_language
 from womoobox.settings import DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES
 
 
-# default format for a success api call
+# Default format for a success api call
 def format_success(add_infos):
     full_infos = {'result' : 'succeed' }
     full_infos.update(add_infos)
@@ -84,7 +84,7 @@ def format_success(add_infos):
     return response
 
 
-# format error to return infos by json
+# Format error to return information by json
 def format_error(error):
     # select language
     language = get_language()

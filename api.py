@@ -22,9 +22,9 @@ def api_index(request):
         return HttpResponseForbidden("Erreur HTTP 403 Forbidden")
 
 
-# create a new Moo
+# Create a new Moo
 @csrf_exempt # no csrf check in forms
-@xframe_options_exempt # no x-frame-options header (api available from others domains)
+@xframe_options_exempt # no x-frame-options header (api available from other domains)
 def moo_add(request):
     if request.method == 'POST':
         form_moo = MooForm(request.POST)
@@ -68,7 +68,7 @@ def moo_add(request):
             return HttpResponseNotAllowed(['POST'])
 
 
-# Get count of moo in the world
+# Get count of Moos in the world
 @csrf_exempt
 def moo_get_count(request):
     if request.method != 'GET':
@@ -114,7 +114,7 @@ def moo_get_lasts(request, *args, **kwargs):
 
 
 @csrf_exempt # no csrf check in forms
-@xframe_options_exempt # no x-frame-options header (api available from others domains)
+@xframe_options_exempt # no x-frame-options header (api available from other domains)
 def key_add(request):
     # create an API key
     key = ApiKey(user_agent=request.META['HTTP_USER_AGENT'])
@@ -125,7 +125,7 @@ def key_add(request):
 
 # Rename ApiKey
 @csrf_exempt # no csrf check in forms
-@xframe_options_exempt # no x-frame-options header (api available from others domains)
+@xframe_options_exempt # no x-frame-options header (api available from other domains)
 def key_rename(request):
     if request.method == 'POST':
         form_key = KeyRename(request.POST)

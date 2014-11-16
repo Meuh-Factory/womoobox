@@ -3,7 +3,7 @@ from django.views.decorators.csrf import csrf_exempt
 from womoobox.settings import *
 
 
-# Form for create a new Moo
+# Form to create a new Moo
 class MooForm(forms.Form):
     key = forms.CharField(label='API Key', max_length=KEY_LENGTH, min_length=KEY_LENGTH)
     latitude = forms.DecimalField(label='latitude', max_digits=23, decimal_places=20)
@@ -11,7 +11,7 @@ class MooForm(forms.Form):
     animal = forms.CharField(label='Animal type', max_length=20)
 
 
-# Form for getting last Moo from a datetime
+# Form to get last Moo from a datetime
 class GetMooForm(forms.Form):
     id = forms.IntegerField(label='Last ID of moo', required=False)
 
