@@ -35,7 +35,7 @@ python manage.py syncdb
 Get & configure Womoobox
 ------------------------
 Checkout code from github repository
-> git clone https://github.com/lrivallain/womoobox.git
+> git clone https://github.com/Meuh-Factory/womoobox.git
 
 Add the app to your `INSTALLED_APPS` in your project settings: `./myproject/settings.py`
 ```
