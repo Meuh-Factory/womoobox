@@ -106,7 +106,8 @@ def moo_get_lasts(request, *args, **kwargs):
             'latitude'      : str(moo.latitude),
             'longitude'     : str(moo.longitude),
             'animal'        : moo.animal_type,
-            'username'      : moo.key.user_name
+            'username'      : moo.key.user_name,
+            'datetime'      : moo.creation_date.strftime("%m/%d/%Y %H:%M:%S"),
         }
         json_moos.append(j_moo)
     response = { 'moos' : json_moos }

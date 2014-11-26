@@ -47,7 +47,6 @@ function geo_transform(coords) {
     return ol.proj.transform(coords, 'EPSG:4326', 'EPSG:3857');
 }
 
-
 /* create a std marker point */
 function create_marker(map, coords, title, css) {
     var pos = geo_transform(coords);
@@ -65,15 +64,41 @@ function create_marker(map, coords, title, css) {
 }
 
 
+/* create an animal point */
+function create_ani_marker(map, coords, pseudo, date, css) {
+    var pos = geo_transform(coords);
+    var _html = '<div class="marker">';
+    _html +=    '    <div class="icon '+css+'"></div>';
+    _html +=    '    <div class="title">';
+    _html +=    '        <p>'+pseudo+'</p>';
+    _html +=    '        <p>'+date+'</p>';
+    _html +=    '    </div>';
+    _html +=    '</div>';
+
+    var d = $(_html);
+
+    var marker = new ol.Overlay({
+        position: pos,
+        positioning: 'center-center',
+        element: d.get(0),
+        stopEvent: false,
+        insertFirst: false
+    });
+    map.addOverlay(marker);
+    return d;
+}
+
+
 /* get infos to create a new moo pointer */
 function gen_moo_point(map, moo) {
     // create point on map
     var coords = [parseFloat(moo.longitude),
                   parseFloat(moo.latitude)];
-    var point = create_marker(map,
-                              coords,
-                              moo.username,
-                              "marker "+ moo.animal +" inclinate");
+    var point = create_ani_marker(map,
+                                  coords,
+                                  moo.username,
+                                  moo.datetime,
+                                  moo.animal +" inclinate");
     if (moo.id > last_id) {
         last_id = moo.id;
     }
